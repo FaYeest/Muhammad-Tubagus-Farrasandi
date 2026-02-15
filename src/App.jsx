@@ -205,12 +205,12 @@ function App() {
         className="sticky top-3 z-50 flex items-center justify-between gap-3 px-3 py-2.5 mx-auto max-w-[1140px] w-full border border-brand-line rounded-2xl bg-brand-surface/90 shadow-soft backdrop-blur-md transition-colors duration-500"
       >
         <a href="#home" className="flex items-center gap-2.5 font-bold group shrink-0">
-          <motion.span 
+          <motion.img 
             whileHover={{ scale: 1.1, rotate: 5 }}
-            className="w-8 h-8 rounded-xl flex items-center justify-center font-outfit bg-brand-primary text-[#f6fbf5] transition-colors duration-500"
-          >
-            F
-          </motion.span>
+            src="./hoshi.png"
+            alt="Logo"
+            className="w-8 h-8 rounded-xl object-cover"
+          />
           <span className="hidden sm:inline text-[0.95rem] tracking-wider transition-colors group-hover:text-brand-primary-strong">FaYeest</span>
         </a>
 
