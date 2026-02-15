@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #e8eee7;
+  --color-brand-bg-soft: #dfe8dd;
+  --color-brand-surface: #f8fcf6;
+  --color-brand-surface-muted: #f1f6ee;
+  --color-brand-primary: #69986e;
+  --color-brand-primary-strong: #4f7654;
+  --color-brand-ink: #172219;
+  --color-brand-ink-soft: #4d5e4f;
+  --color-brand-line: #cfdacb;
+  --color-brand-line-strong: #b7c8b7;
+
+  --font-outfit: "Outfit", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  --shadow-soft: 0 10px 28px rgba(24, 40, 26, 0.08);
+  --shadow-strong: 0 18px 40px rgba(20, 34, 22, 0.12);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-screen font-jakarta text-brand-ink bg-brand-bg transition-colors duration-500;
+  }
+
+  h1, h2, h3 {
+    @apply font-outfit tracking-tight;
+  }
+}
+
+.dark {
+  --color-brand-bg: #0f1410;
+  --color-brand-bg-soft: #161d17;
+  --color-brand-surface: #1a231b;
+  --color-brand-surface-muted: #222d23;
+  --color-brand-ink: #e8eee7;
+  --color-brand-ink-soft: #adb9ad;
+  --color-brand-line: #2d3d2e;
+  --color-brand-line-strong: #3a4f3b;
+  
+  --shadow-soft: 0 10px 28px rgba(0, 0, 0, 0.4);
+  --shadow-strong: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
